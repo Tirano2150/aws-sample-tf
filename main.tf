@@ -16,7 +16,7 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "example" {
-  ami           = data.aws_ami.ubuntu.id
+  ami           = "ami-005af4c3162f495fa"
   instance_type = "t2.micro"
   subnet_id     = "subnet-0a3926b82321277e7"
   tags = {
